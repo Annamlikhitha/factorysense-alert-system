@@ -64,6 +64,12 @@ def get_db():
         db.close()
 
 
+# ─── Health Check ─────────────────────────────────────────────────────────────
+@app.get("/health", summary="Basic service health check")
+def health_check():
+    return {"status": "healthy", "timestamp": datetime.now(timezone.utc).isoformat()}
+
+
 # ─── Routes ───────────────────────────────────────────────────────────────────
 @app.post("/telemetry", summary="Ingest a telemetry reading from a device")
 def post_telemetry(data: TelemetryInput, db: Session = Depends(get_db)):
