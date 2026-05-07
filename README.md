@@ -211,6 +211,15 @@ The demo includes:
 
 ---
 
+## 🔒 Security
+
+* **Secrets are stored only in environment variables**: Sensitive data is injected at runtime and never hardcoded.
+* **`.env` is excluded from version control**: Handled via `.gitignore` to prevent accidental credential leakage.
+* **`.env.example` is provided for safe setup**: Users can safely configure their local instances using the template.
+* **Twilio credentials are never committed to the repository**: We ensure communication keys stay private.
+
+---
+
 ## 🚧 Future Improvements
 
 Potential production-scale enhancements include:
