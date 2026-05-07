@@ -176,8 +176,8 @@ if __name__ == "__main__":
         t.start()
 
     try:
-        for t in threads:
-            t.join()
+        while True:
+            time.sleep(1)
     except KeyboardInterrupt:
         tprint(f"\n{C.CYAN}[SIMULATOR] Stopped by user.{C.RESET}")
         sys.exit(0)
