@@ -1,0 +1,7 @@
+.env
+factory.db
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.idea/
