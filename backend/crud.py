@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-import models, schemas
+from . import models, schemas
 from datetime import datetime, timezone
 
 def create_telemetry(db: Session, telemetry: schemas.TelemetryCreate):

@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
-from utils import send_whatsapp, tprint, C
-from crud import log_alert
+from .utils import send_whatsapp, tprint, C
+from .crud import log_alert
 
 # ─── Thresholds ────────────────────────────────────────────────────────────────
 TEMP_THRESHOLD = 75     # °C — 3 consecutive readings triggers alert

@@ -186,11 +186,11 @@ The backend is publicly deployed for testing and demonstration.
 
 ### Live API
 
-`<YOUR_RENDER_URL>`
+[https://factorysense-alert-system.onrender.com](https://factorysense-alert-system.onrender.com)
 
 ### Interactive API Documentation
 
-`<YOUR_RENDER_URL>/docs`
+[https://factorysense-alert-system.onrender.com/docs](https://factorysense-alert-system.onrender.com/docs)
 
 ---
 
@@ -198,7 +198,7 @@ The backend is publicly deployed for testing and demonstration.
 
 Complete walkthrough and live end-to-end alert demonstration:
 
-`<YOUR_LOOM_VIDEO_LINK>`
+[https://drive.google.com/file/d/1kuc-4cs8VdOO8I0tAgLP18yYQdhBTPYL/view?usp=sharing](https://drive.google.com/file/d/1kuc-4cs8VdOO8I0tAgLP18yYQdhBTPYL/view?usp=sharing)
 
 The demo includes:
 

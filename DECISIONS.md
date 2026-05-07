@@ -173,3 +173,10 @@ The current design would need the following changes:
 | In-process silence monitor | The asyncio task runs in the same process as the API. A crash takes both down. In production, this should be a separate worker. |
 | ISO-8601 strings for timestamps | Avoids timezone bugs at the cost of string parsing on every comparison. Acceptable for this scope; a proper TIMESTAMPTZ column would be better in production. |
 | WhatsApp Sandbox | The Twilio Sandbox requires the recipient to opt in by sending a join message. In production, a registered WhatsApp Business number would be used. |
+176: 
+177: ---
+178: 
+179: ## 6. Live Demo & Deployment
+180: 
+181: - **Live Backend**: [https://factorysense-alert-system.onrender.com](https://factorysense-alert-system.onrender.com)
+182: - **Demo Video**: [https://drive.google.com/file/d/1kuc-4cs8VdOO8I0tAgLP18yYQdhBTPYL/view?usp=sharing](https://drive.google.com/file/d/1kuc-4cs8VdOO8I0tAgLP18yYQdhBTPYL/view?usp=sharing)

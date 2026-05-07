@@ -1,9 +1,9 @@
 import asyncio
 from datetime import datetime, timezone
-from database import SessionLocal
-from models import DeviceState
-from alert_engine import send_alert
-from utils import tprint, C
+from .database import SessionLocal
+from .models import DeviceState
+from .alert_engine import send_alert
+from .utils import tprint, C
 
 CHECK_INTERVAL = 10   # seconds between scans
 TIMEOUT        = 120  # seconds of silence before alert

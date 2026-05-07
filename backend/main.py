@@ -5,12 +5,12 @@ from fastapi.middleware.cors import CORSMiddleware
 import asyncio
 import logging
 
-from database import Base, engine, SessionLocal
-from schemas import TelemetryInput
-from crud import create_telemetry, get_last_50, get_or_create_device
-from alert_engine import process_reading
-from scheduler import monitor_silence
-from utils import tprint, C
+from .database import Base, engine, SessionLocal
+from .schemas import TelemetryInput
+from .crud import create_telemetry, get_last_50, get_or_create_device
+from .alert_engine import process_reading
+from .scheduler import monitor_silence
+from .utils import tprint, C
 
 # ─── Logging (for uvicorn/server-level messages only) ─────────────────────────
 logging.basicConfig(
