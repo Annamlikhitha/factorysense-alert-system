@@ -71,6 +71,16 @@ def health_check():
     return {"status": "healthy", "timestamp": datetime.now(timezone.utc).isoformat()}
 
 
+@app.get("/", summary="Root endpoint - Welcome message")
+def root():
+    return {
+        "message": "Welcome to FactorySense Alert Pipeline API",
+        "docs": "/docs",
+        "health": "/health",
+        "status": "online"
+    }
+
+
 # ─── Routes ───────────────────────────────────────────────────────────────────
 @app.post("/telemetry", summary="Ingest a telemetry reading from a device")
 def post_telemetry(data: TelemetryInput, db: Session = Depends(get_db)):
