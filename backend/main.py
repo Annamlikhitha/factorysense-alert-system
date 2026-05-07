@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi.middleware.cors import CORSMiddleware
 import asyncio
 import logging
+from datetime import datetime, timezone
 
 from .database import Base, engine, SessionLocal
 from .schemas import TelemetryInput
